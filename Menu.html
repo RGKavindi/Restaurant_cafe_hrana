@@ -1,0 +1,328 @@
+<!--Assignment 02 | Question No 07 | Arrange the layout of at least on of your pages to have header, nav bar, side bar, main content and the footer.-->
+<html>
+<head>
+   <title>Menu</title> 
+   <link rel="icon" type="image/x-icon" href="Logo.png">
+   <meta name = "keywords" content = "cafe, HRANA, food, reservation,restaurant,taste,menu,lunch,breakfast,dinner">
+   <meta name = "description" content = "Feal The Real Taste of Food">
+   <meta name = "revised" content = "cafehrana">
+</head>
+    <style>
+        body {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:#dcdcdc;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 1.5px;
+        }
+        .topnav {
+            background-color: rgb(255, 255, 255);
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            color: #000000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: rgb(143, 121, 24);
+            color: rgb(0, 0, 0);
+        }
+        .topnav a.active {
+            background-color: #000000;
+            color: white;
+        }
+        .container {
+            position: relative;
+            text-align:center;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text-box {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgb(255, 255, 255);
+            background: rgba(255, 255, 255, 0.5);
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 1045px;
+            height: 463px;
+        }
+
+        .button {
+            background-color: rgb(143, 121, 24);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            border-radius: 12px;
+            margin: 8px;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+        
+        .sidenav {
+            height: 97.4%;
+            width: 175px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 255, 255);
+            overflow-x: hidden;
+            padding-top: 1px;
+            margin-top: 8px;
+            margin-left: 8px;
+            margin-bottom: 8px;
+        }
+
+        .sidenav a {
+            padding-right:8px;
+            padding-left: 12px;
+            padding-top: 2px;
+            padding-bottom: 1px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #000000;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #b4a418;
+            background-color: #f1ecb6;
+            margin: 9px;
+        }
+
+        .main {
+            margin-left: 175px;
+            font-size: 28px; 
+            padding: 0px 10px;
+        }
+
+        .cardb {
+            background-color: rgb(240, 230, 90);
+            border-radius: 10px;
+            padding: 6px;
+            margin:10px;
+        }
+
+        .button-fixed {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            height:65px;
+            width: 120px;
+            background-color: rgb(143, 121, 24);
+            color: white;
+            padding: 15px;
+            vertical-align: middle;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            border-radius: 12px;
+            margin: 8px;
+        }
+        .button-fixed:hover {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .footer-box{
+            background-color: rgb(143, 121, 24);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-family: sans-serif;
+            font-weight: normal;
+            padding: 40px 20px 10px 60px;
+        }
+
+        .footer-box-left{
+            display: inline-block;
+	        vertical-align:top;
+	        width: 30%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .footer-box-center{
+            display: inline-block;
+	        vertical-align:top;
+	        width: 35%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .footer-box-right{
+            display: inline-block;
+            text-align: right;
+	        vertical-align:top;
+	        width: 30%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+    </style>
+    <body>        
+        <!--Assignment 02 | Question No 07 | Side Bar---->
+        <div class="sidenav">
+            <img src="Logo.png" width="135px" height="135px" style="margin: 12px;" align="center">
+            <hr width="135px">
+            <div class="cardb"><a href="#bf">BreakFast</a></div>
+            <div class="cardb"><a href="#lun">Lunch</a></div>
+            <div class="cardb"><a href="#din">Dinner</a></div>
+            <hr width="135px">
+            <div class="cardb"><a href="#pm">Pizza Menu</a></div>
+            <div class="cardb"><a href="#pam">Pasta Menu</a></div>
+            <div class="cardb"><a href="#sm">Salad Menu</a></div>
+            <div class="cardb"><a href="#spm">Soup Menu</a></div>
+            <div class="cardb"><a href="#bm">Beverages</a></div>
+            <div class="cardb"><a href="#dm">Desserts Menu</a></div>
+            <hr width="135px">
+            <div class="button"><a href="#gtt">Go To Top</a></div>
+        </div>
+
+        <div class="main" id="gtt">
+            <header>
+            <!--Assignment 02 | Question No 06 | Horizontal Navigation bar-->
+            <div class="topnav" id="mtt">
+                <a href="Cafe%20HRANA.html#about">Home</a>
+                <a class="active" href="Menu.html">Menu</a>
+                <a href="Reservation.html">Reservations</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contacts.html">Contact</a>
+                <!--Assignment 02 | Question No 03 | Letter Spacing-->
+                <p style="text-align: right;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 15px;padding-right:15px;font-weight: bold;letter-spacing: 9px;">CAFE HRANA</p>
+            </div>        
+    
+            <!--Top Image-->
+            <div class="container"> 
+                <img src="menu.png" alt="cafehrana" style="width:100%" >   <!--Menu Page Image with a text over it-->
+                <div class="text-box">
+                    <div class="center">
+                        <p><span style="font-size: 50px;font-variant:small-caps;font-weight: bold;">Menu</span> <br>
+                        <span style="font-size:15px;">“A recipe has no soul. You, as the cook, must bring soul to the recipe.”<br><i>-Thomas Keller-</i></span></p>
+                        <br>
+                        <p> <!--Breakfast Button-->
+                            <a class="button" href="#bf">Breakfast</a>
+                            <a class="button" href="#lun">Lunch</a>
+                            <a class="button" href="#din">Dinner</a>
+                        </p>
+                    </div>
+                 </div>
+            </div> 
+            </header>
+
+            <div style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <p><b>Does it seem like the dish you are looking for isn't available here? Don't worry. Tell us. We will prepare it for you! </b></p>
+            </div>
+    
+            <!--From here onwards the content is linked to the images above.-->
+            <div id="bf" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Breakfast Menu</h4>
+            </div>
+    
+            <div id="lun" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Lunch Menu</h4>
+            </div>
+    
+            <div id="din" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Dinner Menu</h4>
+            </div>
+    
+            <div id="pm" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Pizza & Pastries</h4>
+            </div>
+    
+            <div id="pam" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Pasta & Noodles</h4>
+            </div>
+    
+            <div id="sm" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Salad Menu</h4>
+            </div>
+    
+            <div id="spm" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Soups</h4>
+            </div>
+
+            <div id="bm" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Beverages</h4>
+            </div>
+
+            <div id="dm" style="background-color: white;border-width: 1px;border-color: slategrey; margin-top: 8px; font-size: 18px; text-align: center;padding: 10px;">
+                <h4>Desserts</h4>
+            </div>
+
+            <!--Assignment 02 | Question No 05 | Fixed Button-->
+            <div class="container">
+                <div class="button-fixed">
+                    <a href="Contact.html" style="text-decoration: none;color: white;"><img src="fbphone.png" width="20px" height="20px">  <img src="fbwhatsapp.png" width="20px" height="20px"><br>+94 70 379 4554<br>Contact Us</a>
+                </div>
+            </div>
+
+            <!--Assignment 02 | Question No 07 | Footer-->
+            <footer class="footer-box" align="center"> <!--In this group, again the pages have been linked, table has been used to arrange data clearly.-->
+                <div class="footer-box-left">
+                    <img src="Logo.png" width="120px" height="120px">
+                    <h3>CAFE HRANA</h3>
+                    <p style="font-weight: bold;">
+                        <a href="Cafe HRANA.html" style="text-decoration: none;color: white;">Home</a>
+                        |
+                        <a href="Reservation.html" style="text-decoration: none;color: white;">Reservations</a>
+                        |
+                        <a href="Blog.html" style="text-decoration: none;color: white;">Blog</a>
+                        |
+                        <a href="Contact.html" style="text-decoration: none;color: rgb(255, 255, 255);">Contact</a>
+                    </p>
+                    <p class="footer-company-name" style="color: #bdc1c7;font-size: 12px;font-weight: normal;">© 2019 Cafe HRANA Pvt. Ltd.</p>
+                </div>
+
+                <div class="footer-box-center">
+                    <p style="font-size: 18px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight: bold;">Get in Touch With Us...</p>
+                    <div>
+                        <p style="color: azure;font-size: 16;"><img src="placeholder.png" width="20px" height="20px">
+                        59/C, Bope, Padukka, Colombo, Sri Lanka</p>
+                    </div>
+                    <div>
+                        <p style="color: azure;font-size: 16;"><img src="phone.png" width="20px" height="20px">
+                            +94 70 379 45 54</p>
+                    </div>
+                    <div>
+                        <p><img src="mail.png" width="20px" height="20px">
+                        <a href = "mailto: kavindigimhanikgsr@gmail.com" class="a.hover" style="text-decoration: none;color: white;">kavindigimhanikgsr@gmail.com</a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="https://www.facebook.com/Gimhani.Kavindi002" style="text-decoration: none;color: white;"><img src="facebook.png" width="30px" height="30px"></a>  
+                        <a href="linkedin.com/in/gimhaniraigama" style="text-decoration: none;color: white;"><img src="linkedin.png" width="30px" height="30px"></a> 
+                        <a href="https://www.instagram.com/kavi_g1102/?hl=en" style="text-decoration: none;color: white;"><img src="instagram.png" width="30px" height="30px"></a>
+                    </div>
+                </div>
+                
+                <div class="footer-box-right">
+                    <img src="footer.jpg" width="340px" height="210px">
+                </div>
+            </footer>
+    
+        </div>
+    </body>
+</html> 
